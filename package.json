@@ -1,0 +1,23 @@
+{
+  "name": "ts-fokus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script-crud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianoDSM/fokus-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianoDSM/fokus-ts/issues"
+  },
+  "homepage": "https://github.com/AdrianoDSM/fokus-ts#readme",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
