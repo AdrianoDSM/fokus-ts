@@ -1,19 +1,6 @@
 "use strict";
 let estadoInicial = {
-    tarefas: [
-        {
-            descricao: 'Tarefa concluída',
-            concluida: true
-        },
-        {
-            descricao: 'Tarefa pendente 1',
-            concluida: false
-        },
-        {
-            descricao: 'Tarefa pendente 2',
-            concluida: false
-        }
-    ],
+    tarefas: [],
     tarefaSelecionada: null,
     editando: false
 };
@@ -140,4 +127,10 @@ const atualizarUI = () => {
         ulTarefas === null || ulTarefas === void 0 ? void 0 : ulTarefas.appendChild(li);
     });
 };
+document.addEventListener('TarefaFinalizada', () => {
+    if (estadoInicial.tarefaSelecionada) {
+        estadoInicial.tarefaSelecionada.concluida = true;
+        atualizarUI();
+    }
+});
 atualizarUI();
